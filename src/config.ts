@@ -131,9 +131,9 @@ export interface CafeConfig {
 }
 
 export const CAFE_CONFIG: CafeConfig = {
-  name: "The Coffee Corner",
+  name: "Your Café Name Here",
   shortDescription: "Experience Artisanal Mastery",
-  detailedDescription1: "At The Coffee Corner, we believe that coffee is more than a quick morning caffeine fix—it is a sacred medium for personal connection and a canvas for meticulous artisanal craftsmanship. Our journey began over a decade ago with a simple focus: to source the rarest micro-lots from sustainable high-altitude farms and roast them with extreme reverent precision.",
+  detailedDescription1: "At Your Café, we believe that coffee is more than a quick morning caffeine fix—it is a sacred medium for personal connection and a canvas for meticulous artisanal craftsmanship. Our journey began over a decade ago with a simple focus: to source the rarest micro-lots from sustainable high-altitude farms and roast them with extreme reverent precision.",
   detailedDescription2: "Every single cup we pour is a testament to our obsessive attention to detail, from the exact curves of our roast temperature profiles to the meticulously mineral-balanced brewing waters. We unlock complex flavor profiles of roasted cocoa, dark stone plum, wild jasmine, and toasted organic almond.",
   establishedYear: "2012",
   establishedLocation: "West Village",
@@ -144,10 +144,10 @@ export const CAFE_CONFIG: CafeConfig = {
   addressLine2: "Greenwich Village, NY 10014",
   phone: "+12125550198",
   phoneFormatted: "+1 (212) 555-0198",
-  email: "hello@coffeecorner.com",
+  email: "hello@yourcafe.com",
   whatsappNumber: "12125550198", // No spaces, perfect for https://wa.me/
   whatsappMessage: "Hello! I would like to inquire about a reservation or order from your premium menu.",
-  instagramUsername: "TheCoffeeCorner",
+  instagramUsername: "YourCafe",
   instagramUrl: "https://instagram.com",
   twitterUrl: "https://twitter.com",
   linkedinUrl: "https://linkedin.com",
@@ -303,7 +303,7 @@ export const CAFE_CONFIG: CafeConfig = {
     },
     {
       url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1a06GvkkSw4lYTy7nTOkaFw8lLKKpxXw-WtN7W4fuJgV70ZSFgGCB9m7x3RuK-meobFcmi5UMeYR13qtl940jvh376_8dnDyh5ZDO_ql6ewr8S8JoiFoltcnI-QtFWkyZYGYxdwAl548vuzKEP5aa8Xyro16JNLSohOQ-80n1mFiRyxnwLoa0-3VU9kjqpKwn8FxTv2hwajKgZEh6jcUb3VqLD_ojYhcSQLmWFcsakftt8HTG4WN3',
-      title: 'Dusk at The Corner',
+      title: 'Dusk at Your Café',
       desc: 'The iconic backlit serif typography glowing softly as day transitions to premium jazz night sessions.',
       category: 'Interior'
     },
@@ -335,7 +335,7 @@ export const CAFE_CONFIG: CafeConfig = {
     },
     {
       id: '3',
-      quote: "The Gold Spiced Latte is a complete liquid masterpiece. The Coffee Corner has redefined what a neighborhood premium cafe can achieve. A masterpiece of branding and craft.",
+      quote: "The Gold Spiced Latte is a complete liquid masterpiece. Your Café has redefined what a neighborhood premium cafe can achieve. A masterpiece of branding and craft.",
       author: "Marcus Thorne",
       role: "Local Regular & Creator",
       rating: 5,
@@ -391,7 +391,7 @@ export const CAFE_CONFIG: CafeConfig = {
 
   // Landmarks for the localized Greenwich Village neighborhood interactive vector map
   mapLandmarks: [
-    { name: 'The Coffee Corner', x: 50, y: 55, type: 'shop', desc: '42nd Artisanal Ave, West Village' },
+    { name: 'Your Café Name Here', x: 50, y: 55, type: 'shop', desc: '42nd Artisanal Ave, West Village' },
     { name: 'Washington Square Arch', x: 80, y: 35, type: 'park', desc: 'Iconic neighborhood marble archway' },
     { name: 'Bleecker Street Records', x: 30, y: 70, type: 'store', desc: 'Vintage analog music hub' },
     { name: 'West 4th subway station', x: 45, y: 25, type: 'subway', desc: 'Direct transit gateway' },
@@ -400,15 +400,15 @@ export const CAFE_CONFIG: CafeConfig = {
 
   // SEO & OpenGraph Configuration - perfectly ready for real deployment SEO optimizations!
   seo: {
-    title: "The Coffee Corner | Artisanal Master Coffee & Patisserie NYC",
-    description: "Welcome to The Coffee Corner, Greenwich Village's premium specialty coffee roastery & artisan patisserie. Experience handcrafted micro-lots, award-winning lattes, and classic brunch classics.",
+    title: "Your Café Name Here | Artisanal Master Coffee & Patisserie NYC",
+    description: "Welcome to Your Café Name Here, Greenwich Village's premium specialty coffee roastery & artisan patisserie. Experience handcrafted micro-lots, award-winning lattes, and classic brunch classics.",
     keywords: "specialty coffee NYC, artisanal coffee, Greenwich Village cafe, premium brunch New York, V60 pour over, local cafe Manhattan, high-quality cafe template",
     ogType: "website",
-    ogUrl: "https://coffeecorner.com",
+    ogUrl: "https://yourcafe.com",
     ogImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBuL7mppNErBe9dy5wTWVuqvRauwCgi39aztTtQfzBVBiFQCgf1sM9SvumjJtqP6RYINM_Uqn_Oi2BYclORYsgQAwFZiehjfXt1P2vsrXPOqgKWtMabIT4gmU7SHK1QpkFO1_F7aeLVVm5xQu3KOmsn3XqHcaJNWnJxrJ8BMdV1jRkF6hiMW-0m50g0nm08JWhI7xTRoprZop4SIMeEzgYCHK2RL-kNySu6HO4Al_COBJ9cGPI5PvKB",
     faviconUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKOjV0zhkHZQsl09PqwaGlhit9w8KR4v0tsW7Vsunm8hemRgEenQvSaOugDUcYOyDjw3ZW7NGZm0M9RueHmYxB6Wt3hCjIsdjvoz3EU9luj6rieZW4ac0m3Lmu3MG516bl_eSd9vLXEDA_lYKZxICtRwHFFBIdGvS2uzLszdn4fKe28K3mtoV5Kuh19yggGit1g7sHvurp4ij2FTrTpM1WVAj-JhKht-YUXUXAxo7TfAyf49TtA1IW",
     structuredData: {
-      name: "The Coffee Corner",
+      name: "Your Café Name Here",
       description: "Artisanal specialty coffee roastery and premium patisserie based in West Village, New York.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBuL7mppNErBe9dy5wTWVuqvRauwCgi39aztTtQfzBVBiFQCgf1sM9SvumjJtqP6RYINM_Uqn_Oi2BYclORYsgQAwFZiehjfXt1P2vsrXPOqgKWtMabIT4gmU7SHK1QpkFO1_F7aeLVVm5xQu3KOmsn3XqHcaJNWnJxrJ8BMdV1jRkF6hiMW-0m50g0nm08JWhI7xTRoprZop4SIMeEzgYCHK2RL-kNySu6HO4Al_COBJ9cGPI5PvKB",
       telephone: "+12125550198",

@@ -285,10 +285,28 @@ export default function App() {
             <span className="text-secondary italic font-normal tracking-normal font-display">Specialty Cafe & Roasters</span>
           </motion.h1>
 
+          {/* Premium Glassmorphism Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="max-w-2xl mx-auto bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl p-6 shadow-xl text-center space-y-3"
+          >
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-secondary text-white font-sans text-[10px] font-extrabold tracking-widest uppercase rounded shadow-md">
+              🚀 DEMO WEBSITE
+            </div>
+            <p className="text-white text-sm md:text-base leading-relaxed font-semibold">
+              This is a demonstration website created by <span className="text-secondary font-bold">Granth Koushik</span>.
+            </p>
+            <p className="text-white/80 text-xs md:text-sm font-normal leading-relaxed">
+              Your café's name, logo, menu, photos, branding, WhatsApp number, Google Maps location and other details will replace this content.
+            </p>
+          </motion.div>
+
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.6 }}
             className="text-white/70 max-w-2xl mx-auto text-sm md:text-base leading-relaxed"
           >
             {CAFE_CONFIG.detailedDescription1}
@@ -297,22 +315,22 @@ export default function App() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
+            transition={{ duration: 1, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
           >
             <button
-              onClick={() => handleNavigateToSection('menu')}
+              onClick={() => handleNavigateToSection('reserve')}
               className="w-full sm:w-auto px-8 py-4.5 bg-secondary hover:bg-white hover:text-primary rounded-full font-sans text-xs uppercase tracking-widest font-bold transition-all duration-300 shadow-lg shadow-secondary/20 cursor-pointer flex items-center justify-center gap-2 group"
             >
-              <span>Explore Visual Menu</span>
+              <span>Get This Website</span>
               <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
             </button>
             <button
               onClick={() => handleNavigateToSection('reserve')}
               className="w-full sm:w-auto px-8 py-4.5 bg-white/10 hover:bg-white hover:text-primary rounded-full font-sans text-xs uppercase tracking-widest font-bold transition-all duration-300 backdrop-blur-sm border border-white/25 cursor-pointer flex items-center justify-center gap-2"
             >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Reserve Table</span>
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Customize For My Café</span>
             </button>
           </motion.div>
 
@@ -345,7 +363,7 @@ export default function App() {
                 Single Origin Pursuit
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-primary leading-tight">
-                Our Roastery & <br /> <span className="italic font-normal">Artisanal Patisserie</span>
+                Your Café's <br /> <span className="italic font-normal">Story & Philosophy</span>
               </h2>
               <div className="w-12 h-1 bg-secondary rounded-full mt-4 mb-6" />
               <p className="text-on-surface-variant text-sm leading-relaxed">
@@ -500,6 +518,181 @@ export default function App() {
         </div>
       </section>
 
+      {/* Why Every Modern Café Needs a Website Section */}
+      <section className="py-24 bg-surface-container border-b border-primary/5 scroll-mt-20" id="why-website">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <span className="font-sans text-xs uppercase tracking-[0.4em] text-secondary font-bold block">
+              Digital Masterclass
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary leading-tight">
+              Why Every Modern Café Needs a Website
+            </h2>
+            <div className="w-12 h-1 bg-secondary mx-auto mt-4 rounded-full" />
+            <p className="text-on-surface-variant text-xs md:text-sm mt-3 leading-relaxed">
+              This interactive template shows how we help local cafés thrive in the digital age. Having a premium web presence turns online searches into foot traffic and loyal regulars.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Card 1: Online Menu */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <BookOpen className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Online Menu</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Let customers browse your coffee roasts, pastry details, and dietary info instantly before stepping foot in your cafe.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 2: Google Search Visibility */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Google Visibility</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Be found when travelers search "best specialty coffee near me" with built-in schema, fast speeds, and search-optimized tags.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 3: WhatsApp Ordering */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <MessageSquare className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>WhatsApp Ordering</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Provide seamless single-click WhatsApp ordering paths for swift skip-the-line pickups and personal customer support.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 4: Google Maps Integration */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Maps Integration</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Direct directions and live location coordinates embedded on custom localized maps for stress-free street guidance.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 5: Photo Gallery */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <Eye className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Photo Gallery</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Showcase high-resolution aesthetic interiors, pours, and pastries in responsive masonry grids to set the visual vibe.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 6: Table Reservation */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <Calendar className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Table Reservation</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Empower clients to book table reservations directly with simple forms and interactive, locally saved histories.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 7: Instagram Integration */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <Instagram className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Social Links</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Embed active social posts with overlays to turn web visitors into active Instagram followers and brand loyalists.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Card 8: Mobile Friendly Design */}
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className="p-6 bg-white border border-primary/5 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-4">
+                  <Layers className="w-5 h-5" />
+                </div>
+                <h3 className="font-display text-base font-bold text-primary mb-1 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Mobile First</span>
+                </h3>
+                <p className="text-[11px] text-on-surface-variant/85 leading-relaxed">
+                  Optimized for speed and designed mobile-first so cafe owners and guests have a flawless experience on WhatsApp links.
+                </p>
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
       {/* 4. Highly Curated Visual Menu & Cart (Requirement 3 & 9) */}
       <section className="py-24 bg-surface scroll-mt-20" id="menu">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -511,7 +704,7 @@ export default function App() {
                 Sensory Discoveries
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-3">
-                Curated Atelier Menu
+                Your Menu
               </h2>
             </div>
 
@@ -685,7 +878,7 @@ export default function App() {
             <span className="font-sans text-xs uppercase tracking-[0.4em] text-secondary font-bold block">
               Atelier Interior
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Glimpses of Perfection</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">Your Gallery</h2>
             <div className="w-12 h-1 bg-secondary mx-auto mt-4 rounded-full" />
             
             {/* Gallery Filters (Masonry filters) */}
@@ -912,7 +1105,7 @@ export default function App() {
                 Social Narratives
               </span>
               <h4 className="font-display text-2xl font-bold text-primary mt-2">
-                Follow our daily brew @TheCoffeeCorner
+                Follow our daily brew @{CAFE_CONFIG.instagramUsername}
               </h4>
             </div>
             
@@ -1049,7 +1242,7 @@ export default function App() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p className="text-white/40">
-            © 2026 {CAFE_CONFIG.name}. Artisanal Excellence. Configured for Global Reuse.
+            © 2026 {CAFE_CONFIG.name}. Demo Website Designed & Developed by <span className="text-secondary font-bold">Granth Koushik</span>.
           </p>
           <div className="flex gap-6 text-white/40 font-semibold tracking-wider font-sans text-[10px] uppercase">
             <span>New York</span>
@@ -1078,11 +1271,19 @@ export default function App() {
       {/* Floating Scroll-to-Top FAB */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-24 right-6 z-40 w-11 h-11 bg-white border border-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-md cursor-pointer group"
+        className="fixed bottom-22 right-6 z-40 w-11 h-11 bg-white border border-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-md cursor-pointer group"
         aria-label="Scroll to top"
       >
         <ArrowUp className="w-4 h-4 transition-transform group-hover:-translate-y-1" />
       </button>
+
+      {/* Floating Badge at the Bottom-Right (Demo by Granth Koushik) */}
+      <div className="fixed bottom-36 right-6 z-40 bg-primary/95 text-white border border-white/10 backdrop-blur-md px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 hover:scale-105 transition-all">
+        <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+        <span className="font-sans text-[10px] uppercase tracking-widest font-bold text-white">
+          Demo by Granth Koushik
+        </span>
+      </div>
 
       {/* Interactive Cart sliding drawer */}
       <CartDrawer
