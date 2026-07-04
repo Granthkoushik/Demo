@@ -1,0 +1,6 @@
+{
+  "name": "The Coffee Corner",
+  "description": "Artisanal coffee experience featuring single origin brews, seasonal patisseries, interactive table reservations, and an immersive brewery showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
